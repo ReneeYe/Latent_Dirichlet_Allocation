@@ -1,0 +1,30 @@
+ (CNN)What if everything you knew about time was wrong, and time actually moved at a different rate from what your watch or your phone is telling you right now?
+A study released Wednesday in Optica, the Optical Society's research journal, is putting the pieces together about how to get an even better way to keep time.
+Beyond being a great conversation starter in a philosophy class or at the bar, you might want to know about this more precise timekeeper because it could mean better directions, safer travel and even more money in the stock market.
+To understand how, you've got to know a little more about how we currently keep time.
+What is time, anyway?
+Our understanding of a second is based on a system of technology developed in the 1940s and an agreement among scientists in 1967. Keeping time is a lot more complicated than counting "one Mississippi, two Mississippi."
+A clock counts the intervals of something that happens repeatedly, ideally with as little variation as possible. A second used to be defined as 1/86,400 of the mean solar day, but irregularities in the Earth's rotation make this measurement of time imprecise. To understand how important it is to have a good timekeeper, just ask the captains of ancient ships, whose clocks took them off-course as they neared the equator or the North Pole or moved through humidity.
+Scientists realized they could get a much more exact measure if they could gauge the movement of something more consistent.  Enter Nobel Prize winner Isidor Rabi, a physics professor at Columbia University who figured out that a clock could be created from a technique he mastered in the 1930s called atomic beam magnetic resonance.
+Rabi figured out that if you expose subatomic particles to certain frequencies of radiation, the electrons that naturally circle the nucleus of an atom "jump." Measuring this movement as it vibrates between two energy states would be a lot more precise than the swing of the pendulum of your favorite grandfather clock. 
+In 1949, the National Bureau of Standards made one atomic clock, and others would soon follow.  The technology became so good that in 1967, scientists redefined what a second was. 
+The international definition we use now is the time that elapses during 9,192,631,770 (9.192631770 x 10^9) cycles of the radiation produced by the transition between two levels of the cesium 133 atom.
+Get all that? It's tricky. About 400 atomic clocks around the world, interlinked via satellite, help keep global time accurate. The system is considered a million times better as a timekeeper than astronomical-based clocks. 
+Why do we need such precision?
+Your spouse probably won't yell at you for being one-trillionth of a second late, but many of our favorite high-tech gadgets depend on this measurement being right. 
+Modern telecom equipment requires synchronization to about a millionth of a second per day. Power grids and GPS systems need about a billionth of a second a day. The Internet depends on this accuracy. 
+But these atomic clocks are not perfect. They still can accumulate an error of about one nanosecond over a month. In a quest for perfection, scientists want to make this measurement better, and they now think they have a way: optical clocks.
+Building a better time trap
+Optical clocks use atoms or ions that oscillate about 100,000 times higher than microwave frequencies used in atomic clocks. That means they "tick" faster and are more stable over time. Scientists have worked with optical clocks in labs, but they aren't ready for prime time, so to speak. 
+"These are fairly complex systems with dozens of lasers that need to be frequency locked at the same time, and they simply break sometimes," said Christian Grebing, author of the new study and a scientist at Physikalisch-Technische Bundesanstalt in Braunschweig, Germany. 
+The clock Grebing's team used essentially has a redundant system that can continue to run even when the optical clock breaks down, shrinking the time error to less than .20 nanoseconds over the 25 days it ran. 
+"That means, if you started this clock at the beginning of the universe with the Big Bang, it would likely not have gained or lost a second for the entire age of the universe," said Scott Diddams, head of a team of scientists at the National Institute of Standards and Technology based in Boulder, Colorado, which works with optical and atomic clocks. 
+"This study shows these optical clocks can be connected beyond the lab, essentially, to the gears that lead to a usable output," said Diddams, who is not connected with the new study.  
+That means these optical clocks can be the future of precise timekeeping and will probably be able to keep time about 100 times better than atomic clocks.
+"There is a very fast-paced evolution of these optical clocks, especially in these last few years, as many groups around the world are pushing them to be even better," Grebing said.
+So while Grebing doesn't believe the technology is yet good enough to change how we define a second, he and Diddams think the definition will change in our lifetime. 
+Unfortunately, that doesn't mean time in your dull meetings will go any faster. 
+"It is important not to confuse the actual physical clock that measures time with time itself," said Craig Callender, a professor and chairman of the Department of Philosophy at the University of California, San Diego, who specializes in time. "But this is still amazing to think how accurate these measures now can be."
+And as these optical clocks are perfected, your GPS could become more precise and may soon even work inside big buildings, planes could become safer, and financial markets could handle even more transactions in shorter amounts of time. There are many more applications that haven't even been dreamed of yet.
+"Of course, there are so many possibilities," Grebing said. "That's why we like playing around with these things."
+Playing around with time.

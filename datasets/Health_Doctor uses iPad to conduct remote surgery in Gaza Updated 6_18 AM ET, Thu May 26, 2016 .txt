@@ -1,0 +1,22 @@
+Vital Signs is a monthly program bringing viewers health stories from around the world.
+ (CNN)In countries ravaged by conflict, providing international medical expertise on the ground can be almost impossible. 
+But a new software, called Proximie, is enabling surgeons to provide help from wherever they are in the world, all through the screen of an iPad.
+"I see on my screen the surgical feed that is being captured by the camera in Gaza and I'm able to draw on my screen the incision that needs to be done," says Dr. Ghassan Abu-Sitta, Head of Plastic Surgery at the American University of Beirut Medical Center.
+"Like being in the room"
+Abu-Sitta has already used the Proximie software to lead two operations in the Gaza strip from his base in Beirut. From hundreds of miles away he showed colleagues how to negotiate a blast injury and operate on a congenital anomaly affecting the hand.
+Read: Would you have surgery at the hands of a robot?
+The software means that surgeons can demonstrate -- in real time -- the actions needing to be taken on the front line.
+The procedure uses two smart phones or tablets connected to the internet which show a live camera feed of the operation. The surgeon sees this, and then marks on their device where to make incisions.
+"That drawing shows up on my colleague's screen in Gaza and he follows my drawings by making the incisions where they appear on the screen," says Dr. Abu-Sitta, "It really is the equivalent of being there in the room with them."
+With two thirds of the world's population lacking access to safe surgery, the time is ripe to develop new techniques to reach more remote areas.
+A helping hand
+Being able to watch surgery in progress could also make it a useful training aid. 
+Read: Step in the operating room, wherever you are in the world
+"We want to be the platform for medical students to really engage in surgery," says Proximie co-founder Dr. Nadine Hachach-Haram. "Historically the old viewing galleries that happened in surgery where students could come in and learn and watch, they don't exist anymore.
+"Surgery is very visual. You can read it in a book if you want but it's not the same as watching it live, so this is where our platform really fits in."
+According to Peter Kim, Vice President of the Sheikh Zayed Institute for Pediatric Surgical Innovation, Proximie could be a positive addition to the range of other products using cameras and video for real-time sharing.
+"I think the need and effort to share best practice and dissipate very siloed experiences in medicine should be supported," says Kim. "Those involved should be applauded for their effort but if it is a product with cost attached to it, the value must be clearly articulated."
+Read: Would you let a robot perform your surgery by itself?
+Previously, Abu-Sitta and his staff were trying to help overseas surgeons by sending them audio recordings, photos and X-rays using the online messenger WhatsApp. But the new software is far more interactive, providing detailed images and patient information throughout the surgery.
+"We wanted to push the idea that with only the minimum hardware, and minimum infrastructure you can still pull it off," says Abu-Sitta, "With just two tablets, iPad to iPad, we're able to perform this surgery."
+Whether it's used for education or to conduct delicate surgeries in conflict zones, internet enabled software such as Proximie could be the future of surgery.

@@ -1,0 +1,10 @@
+ (CNN)Want to launch a nuclear missile? You'll need a floppy disk.
+That's according to a new report by the U.S. Government Accountability Office (GAO), which found that the Pentagon was still using 1970s-era computing systems that require "eight-inch floppy disks." 
+Such disks were already becoming obsolete by the end of that decade, being edged out by smaller, non-floppy 3.5 to 5.25-inch disks, before being almost completely replaced by the CD in the late 90s. 
+Except in Washington that is. The GAO report says that U.S. government departments spend upwards of $60 billion a year on operating and maintaining out-of-date technologies.
+That's three times the investment on modern IT systems. 
+Obsolete
+The report says the Pentagon is planning to replace its floppy systems -- which currently coordinate intercontinental ballistic missiles (ICBMs), nuclear bombers and tanker support aircraft -- by the end of 2017. 
+Other departments were also put on notice to update their systems. The U.S. Treasury for example, still depends on assembly language code "initially used in the 1950s." 
+Bringing government departments into the 21st century has proven difficult across the board. 
+Megan Smith, the current U.S. Chief Technology Officer, told the New York Times in 2015 of the "culture shock" experienced by the tech-savvy Obama campaign when they took control of a White House still dependent on floppy disks and Blackberrys. 

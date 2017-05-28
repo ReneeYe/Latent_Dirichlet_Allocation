@@ -1,0 +1,83 @@
+   vidConfig.push({ videoArray : [ {id : "/video/luxury/2015/10/14/tesla-driverless-car.cnnmoney", collection: "", hed : "Tesla makes handsfree driving a reality"} ], loc : 'top', autoplay : true, playerprofile : 'story', playerid : 'cvp_story_0', divid : 'vid0', hedtarget : '#cnnplayer0 .cnnHeadline' });          Tesla makes handsfree driving a reality     
+One of the hottest tech stocks of the past year and a half is helping to make driverless cars a reality.  Nvidia (NVDA, Tech30), a company most well known for graphics processing chips used for video games, has also developed the Drive PX autonomous car computer and Drive CX digital cockpit.   
+var SMARTASSET = SMARTASSET || {};
+SMARTASSET.setSmartAssetDiv = function() {
+    $allParagraphs = $('#storytext').find('p')
+    var i;
+    var heights = 0;
+    var limit = SMARTASSET.getModulePositionLimit();
+    if (limit > 0) {
+        var afterParagraphFour = false;
+        var smartAssetDiv = '<div id="smartassetcontainer" class="module" style="float:none; width: 300px; margin-bottom:0;"><div class="module" style="height:35px; margin-bottom:0;"><h3 class="module-header" style="margin-bottom:0; width: 300px;">Powered by SmartAsset</h3><div class="module-body" style="padding-top:0;"><div id="smartasset-article" class="collapsible"></div></div></div></div>';
+        for (i = $allParagraphs.length-1; i > 0; i--) {
+            if (i > 4) {
+                afterParagraphFour = true;
+            }
+            $currentParagraph = $($allParagraphs[i]);
+            
+            heights += $currentParagraph.height();
+            if (heights > limit && afterParagraphFour) {
+                console.log($currentParagraph.text());
+                $currentParagraph.after(smartAssetDiv);
+                heights = -9999; // reset the heights variable
+                $('#smartasset-article').css('float','left'); // allows module to have text float to right
+                $('#smartasset-article').css('margin-right','20px');
+                $('#smartasset-article').css('margin-bottom','25px');
+            }
+        }
+    }
+    
+}
+
+SMARTASSET.getModulePositionLimit = function() {
+    /* returns integer position of where we should insert the module
+        1. if paragraph height is at least 2000, we will insert at middle
+        2. else we wait for 1000 pixels. */
+    var positionLimit;
+    var i;
+    var total = 0;
+    $allParagraphs = $('#storytext').find('p')
+    $('#storytext figure').hide();
+    
+    for (i = 0; i < $allParagraphs.length; i++) {
+        console.log("total before  = " + total);
+        total = total + $($allParagraphs[i]).height();
+        console.log("total after = " + total);
+    }
+    $('#storytext figure').show();
+    if (total > 2000) {
+        positionLimit = total * 2 / 3;
+    } 
+    else if (total < 500) {
+        positionLimit = 0;
+    }
+    else {
+        positionLimit = 500;
+    }
+    return positionLimit;
+}
+
+SMARTASSET.setSmartAssetScript = function() {
+    console.log('starting setSmartAssetScript');
+    SA = document.SA || [];
+    SA.push({
+        embedUrl: "https://smartasset.com",
+        container: "#smartasset-article",
+        version: 1.1,
+        data:
+          { key: "bdknf2rinbhwvdksm6zbmhf3twrv4oih" }
+    });
+    console.log('finished in setSmartAssetScript push() call');
+
+    var smscript = document.createElement("script");
+    smscript.type = "text/javascript";
+    smscript.async = true;
+    smscript.src = ("https:" == document.location.protocol ? "https://" : "http://") + "smartasset.com/embed.js";
+
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(smscript, s);
+    console.log("finished entire function of setSmartAssetFunction()");
+};
+SMARTASSET.setSmartAssetDiv();
+SMARTASSET.setSmartAssetScript();
+   Nvidia's technology also powers in-car navigation and entertainment systems.   Honda (HMC), Daimler's Mercedes Benz, Volvo and Tesla (TSLA) are some of Nvidia's bigger automotive partners.   Autos are still a small business for Nvidia, but it is growing rapidly. Sales from its car customers surged 75% last year.   And the company said in its latest annual report that its automotive technology, which is currently in more than 10 million cars, offers processing power greater than 150 Macbook Pro notebooks.   Investors are getting behind the wheel too. Nvidia's stock surged nearly 65% in 2015 and is up another 34% so far this year.   Nvidia CEO Jen-Hsun Huang has been a bit of an evangelist for autonomous cars.   He's appeared at tech conferences with Tesla CEO Elon Musk to discuss them -- and proudly tweeted about his new Model X last year.    Love my new rocket! Congrats, Elon and the @TeslaMotors and NVIDIA teams. - Jen-Hsun Huang pic.twitter.com/KXdkuSMr3j— NVIDIA (@nvidia) October 27, 2015     Nvidia will face tough competition in the market though -- most notably from chip company Mobileye (MBLY).   Semiconductor giants Intel (INTC, Tech30), Qualcomm (QCOM, Tech30) and Texas Instruments (TXN) are also dipping their toes in the autonomous car waters.   Earlier this year, Intel bought an Italian company called Yogitech, which is working on making driverless cars safer.   But the good news for Nvidia is that even as it looks to become a bigger player in autonomous cars, its core business is still doing quite well.   Revenue from its gaming chips unit surged more than 35% last year. That division accounts for 56% of Nvidia's total sales.   Related: Feds to Google: Cars don't need drivers   And that appears to be the main reason why Nvidia is thriving while Mobileye, which is more of a pure play on driveless tech, has been struggling lately. GM (GM), Nissan (NSANF), BMW and Hyundai (HYMTF) are four of Mobileye's biggest customers.   Shares of Mobileye are down 13% this year and 23% over the past 12 months, in part due to fears of increased competition.   Still, the self-driving market may be big enough for more than one player, especially since auto companies aren't the only ones building autonomous cars.   Google parent Alphabet (GOOGL, Tech30) is developing self-driving vehicles and rumors are running rampant that Apple (AAPL, Tech30) also has a car in the works.   So there may be enough wealth to spread around for Mobileye, Nvidia and other developers of what will wind up being the guts of self-driving cars.      CNNMoney (New York)  First published May 23, 2016: 11:35 AM ET  
