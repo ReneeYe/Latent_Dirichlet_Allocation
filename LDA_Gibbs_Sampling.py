@@ -23,7 +23,7 @@ class LDA(object):
         doc_topic_[n_samples, n_features] Point estimate of the document-topic distributions (Theta in literature)
         n_z_[num_topic]: Array of topic assignment counts in final iteration.
 	"""
-    def __init__(self, num_topic,alpha=None,beta=0.1,num_iter=800,random_seed=1):
+    def __init__(self, num_topic,alpha=None,beta=0.1,num_iter=250,random_seed=1):
         #assure no meaningless values
         self.num_topic = num_topic
         self.num_iter = num_iter
@@ -168,8 +168,15 @@ class LDA(object):
             self._initialise(M_dtm_2)
             for i in range(self.num_iter):
                 self._gibbs_sampling(predict= True)
-                
+            
+            if 'theta_test' not in self.results.keys():
+                temper = list()
+            else:
+                temper = list(self.results['theta_test'])
             ln_pr, theta = self._perplexity(M_dtm)
+            temper.append(theta)
+            self.results['theta_test'] = np.array(temper)
+            
             n += n_m
             total_ln_pr += ln_pr
             #the distribution of new word!
@@ -211,5 +218,7 @@ class LDA(object):
         self.results["document-topic-theta"] = (self._n_dz+ alpha).astype(float)/(self._n_d +  n_t*alpha)[:,np.newaxis]
         self.results["topic-vocabulary"] = self._n_zw
         self.results["topic-vocabulary-sum"] = self._n_z
+        self.results["document-topic"] = self._n_dz
+        self.results["'document-topic-sum"] = self._n_d
         self.results["log_likelihood"] = self.log_likelihood
         

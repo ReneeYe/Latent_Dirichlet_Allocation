@@ -22,6 +22,8 @@ class TOPIC_MODEL(object):
         doc_size = len(allcontent)
         index = np.random.binomial(1, p = train_prop, size= doc_size)
         train_index, test_index = index.astype('bool'), (1 - index).astype('bool')
+        #self.train_index = train_index
+        self.test_index = test_index
         
         train_content = list(compress(allcontent,train_index))
         corpus_train,vocab_train = util.corpus2dtm(util.content2corpus(train_content))
