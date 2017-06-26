@@ -23,7 +23,7 @@ class LDA(object):
         doc_topic_[n_samples, n_features] Point estimate of the document-topic distributions (Theta in literature)
         n_z_[num_topic]: Array of topic assignment counts in final iteration.
 	"""
-    def __init__(self, num_topic,alpha=None,beta=0.1,num_iter=250,random_seed=1):
+    def __init__(self, num_topic,alpha=None,beta=0.1,num_iter=500,random_seed=1):
         #assure no meaningless values
         self.num_topic = num_topic
         self.num_iter = num_iter
@@ -159,6 +159,7 @@ class LDA(object):
         n = 0
         total_ln_pr = 0
         pred_pdf = np.zeros((1,corpus_test.shape[1]),dtype=float)
+        theta_test= np.zeros((0,self.num_topic),dtype=float)
         for M_dtm in corpus_test:
             n_m = M_dtm.sum()
             M_dtm_2 = M_dtm[np.newaxis,:]
@@ -167,16 +168,11 @@ class LDA(object):
             
             self._initialise(M_dtm_2)
             for i in range(self.num_iter):
-                self._gibbs_sampling(predict= True)
-            
-            if 'theta_test' not in self.results.keys():
-                temper = list()
-            else:
-                temper = list(self.results['theta_test'])
+                self._gibbs_sampling(predict = True)
+              
             ln_pr, theta = self._perplexity(M_dtm)
-            temper.append(theta)
-            self.results['theta_test'] = np.array(temper)
-            
+            #print(theta)
+            theta_test = np.r_[theta_test, theta]
             n += n_m
             total_ln_pr += ln_pr
             #the distribution of new word!
@@ -193,6 +189,7 @@ class LDA(object):
         pred_pdf = np.delete(pred_pdf,0,axis=0)
         self.results["perplexity"] = np.exp(-total_ln_pr/n)
         self.results["predict_term_distribution"] = pred_pdf
+        self.results["theta-test"] = theta_test
                     
     def _perplexity(self,m_dtm):
         #theta
@@ -219,6 +216,6 @@ class LDA(object):
         self.results["topic-vocabulary"] = self._n_zw
         self.results["topic-vocabulary-sum"] = self._n_z
         self.results["document-topic"] = self._n_dz
-        self.results["'document-topic-sum"] = self._n_d
+        self.results["document-topic-sum"] = self._n_d
         self.results["log_likelihood"] = self.log_likelihood
         

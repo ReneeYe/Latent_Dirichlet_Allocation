@@ -13,7 +13,7 @@ import re
 class TOPIC_MODEL(object):
     def __init__(self):
         return
-    def fit(self,allcontent,num_topic=10,train_prop = 0.9,**kwarg):
+    def fit(self,allcontent,num_topic=10,train_prop = 0.2,**kwarg):
         try:
             np.random.seed(kwarg['random_seed'])
         except:
@@ -28,6 +28,7 @@ class TOPIC_MODEL(object):
         train_content = list(compress(allcontent,train_index))
         corpus_train,vocab_train = util.corpus2dtm(util.content2corpus(train_content))
         self.vocab_train = vocab_train
+        self.corpus_train = corpus_train
         model = LDA(num_topic= num_topic,**kwarg)
     
         #print(model.alpha)
@@ -36,14 +37,19 @@ class TOPIC_MODEL(object):
         test_content = list(compress(allcontent,test_index))
         test_rawword = util.content2corpus(test_content)
         test_dtm = []
+        #corups_dtm = []
         for raw in test_rawword:
             dtm =  [raw.count(term) for term in vocab_train]
+            #corups_dtm.append(dtm)
             diff= len(raw) - sum(dtm)
-        if diff >0 :
-            dtm[-1] = diff
+            if diff >0 :
+                dtm[-1] = diff
             test_dtm.append(dtm)
             
         corpus_test = np.array(test_dtm)
+        #print(corpus_test)
+        model.results['corpus_train'] = corpus_train
+        model.results['corpus_test'] = corpus_test
         model.predict(corpus_test)
         model.results['test_index'] = test_index
         model.results['train_index'] = train_index
