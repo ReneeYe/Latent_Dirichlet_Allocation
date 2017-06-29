@@ -1,0 +1,20 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: acl2017.aux
+The style file: acl_natbib.bst
+I found no \citation commands---while reading file acl2017.aux
+Database file #1: acl2017.bib
+I was expecting a `,' or a `}'---line 2 of file acl2017.bib
+ :  
+ :  author = {J. McAuley and J. Leskovec},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 10 of file acl2017.bib
+ :  
+ :  author = {David M.Blei, Andrew Y.Ng and Michael I.Jordan}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 19 of file acl2017.bib
+ :  
+ :  author = {Gregor Heinrich}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+(There were 4 error messages)
