@@ -19,6 +19,21 @@ is used to do some preprocessing.
 ### experiment_food_data.csv
 
 is the selected 1500 review data from the original dataset.
+
+### ml-20m(too large, not included in archive)
+
+is the file for datasets of logs of movie reviews from MovieLens 
+
+### final_movie_2000.csv
+
+is the selected 2000 users from rating.csv in ml-20m file
+
+
+# document modelling
+### topic_model_plsi.ipyn
+
+uses gensim python library to train the text data with pLSA model, to generate topic items
+
 # topic number selecting and document classification
 ### Text_lda.py 
 
@@ -32,3 +47,13 @@ is almost the same as Text_lda.py except using Summary as the corpus.
 ### Summary_classification.py
 
 is the implement of classification for Summary, using SGD model, also, I've added word2vec feature in this part. And compare the accuracy of different model.
+
+
+# collaborative filtering
+### final_experiment.ipynb
+
+include all codes from parameter tuning to final model evaluation
+
+### AI_plot.
+
+delicated plot for CF
